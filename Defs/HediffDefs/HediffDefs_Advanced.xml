@@ -7,10 +7,6 @@
       <defaultLabelColor>(0,205,255)</defaultLabelColor>
 	  	  <description>Hediff from a Advanced Implant</description>
       <isBad>false</isBad>
-      <addedPartProps>
-         <partEfficiency>1.25</partEfficiency>
-         <betterThanNatural>true</betterThanNatural>
-      </addedPartProps>
    </HediffDef>
 
    <HediffDef ParentName="Advanced">

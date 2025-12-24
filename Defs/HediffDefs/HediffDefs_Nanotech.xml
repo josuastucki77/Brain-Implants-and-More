@@ -7,10 +7,6 @@
       <defaultLabelColor>(53,234,255)</defaultLabelColor>
 	  <description>Hediff from a Nanotech Implant</description>
       <isBad>false</isBad>
-      <addedPartProps>
-         <partEfficiency>1</partEfficiency>
-         <betterThanNatural>true</betterThanNatural>
-      </addedPartProps>
    </HediffDef>
    
   

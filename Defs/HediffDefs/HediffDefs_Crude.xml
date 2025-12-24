@@ -7,10 +7,6 @@
       <defaultLabelColor>(204,147,93)</defaultLabelColor>
 	  	  <description>Hediff from a Crude Implant</description>
       <isBad>false</isBad>
-      <addedPartProps>
-         <partEfficiency>1</partEfficiency>
-         <betterThanNatural>true</betterThanNatural>
-      </addedPartProps>
    </HediffDef>
    
    <HediffDef ParentName="CrudeS">
@@ -22,8 +18,8 @@
 	 <li>
 	     <statOffsets>
          <ImmunityGainSpeed>+0.15</ImmunityGainSpeed>
-		 <HungerRateMultiplier>0.35</HungerRateMultiplier>
 		 </statOffsets>
+         <hungerRateFactorOffset>0.35</hungerRateFactorOffset>
      </li>
 	 </stages>		 
   </HediffDef>

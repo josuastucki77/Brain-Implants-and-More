@@ -7,10 +7,6 @@
       <defaultLabelColor>(255,0,220)</defaultLabelColor>
 	  <description>Hediff from a Glitterworld Implant</description>
       <isBad>false</isBad>
-      <addedPartProps>
-         <partEfficiency>1.50</partEfficiency>
-         <betterThanNatural>true</betterThanNatural>
-      </addedPartProps>
    </HediffDef>
 
    <HediffDef ParentName="Glitterworld">
