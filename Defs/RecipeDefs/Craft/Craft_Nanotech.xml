@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<RecipeDef>
+      <defName>MakeNanotechChip</defName>
+      <label>fabricate Nanotech Chip</label>
+      <description>Fabrican a Nanotech Chip, which slowly heals injuries.</description>
+      <jobString>Fabricating Nanotech Chip.</jobString>
+      <workAmount>13500</workAmount>
+      <workSpeedStat>SmoothingSpeed</workSpeedStat>
+      <effectWorking>ConstructMetal</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+      <Crafting>18</Crafting>
+      </skillRequirements>
+      <ingredients>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Plasteel</li>
+            </thingDefs>
+          </filter>
+          <count>180</count>
+        </li>   
+        <li>
+          <filter>
+            <thingDefs>
+              <li>ComponentSpacer</li>
+            </thingDefs>
+          </filter>
+          <count>14</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>MechSerumHealer</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+		<li>
+          <filter>
+            <thingDefs>
+              <li>GlitterworldChipset</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <products>
+        <NanotechChip>1</NanotechChip>
+      </products>
+      <recipeUsers>
+        <li>ElectricAssembler</li>
+      </recipeUsers>
+	  <researchPrerequisite>NanotechB</researchPrerequisite>
+    </RecipeDef>
+	
+</Defs>

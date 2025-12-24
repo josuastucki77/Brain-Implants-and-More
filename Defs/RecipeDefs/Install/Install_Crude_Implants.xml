@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <RecipeDef Name="SurgeryCrude" ParentName="SurgeryFlesh" Abstract="True">
+    <surgerySuccessChanceFactor>0.75</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.02</deathOnFailedSurgeryChance>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<workAmount>1500</workAmount>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>MedicineIndustrial</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="SurgeryCrude">
+		<defName>InstallCrudeImmuneChip</defName>
+		<label>install Crude Immune Chip</label>
+		<description>Installs a Crude Immune Chip.</description>
+		<jobString>Installing Crude Immune Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CrudeImmuneChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CrudeImmuneChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CrudeImmuneChip</addsHediff>
+	</RecipeDef>
+   
+</Defs>   

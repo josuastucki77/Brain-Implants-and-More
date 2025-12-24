@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <ThingDef Name="Implants" ParentName="BodyPartBase" Abstract="True">
+      <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li>Chips</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="Implants">
+    <defName>BasicInformationChip</defName>
+    <label>basic information chip</label>
+    <description>A brain implant that encourages the storing of long-term memories, while doing it at an increased speed. This effectively increases skill gain.</description>
+    <statBases>
+      <MarketValue>1250</MarketValue>
+      <Mass>14</Mass>
+    </statBases>
+	<graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <ThingDef ParentName="Implants">
+    <defName>BasicResearchChip</defName>
+    <label>basic research Chip</label>
+    <description>A Basic-grade brain implant that slightly increases the activity of the parts of the brain necessary for abstract and critical thought, increasing one's ability to conduct research.</description>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>16</Mass>
+    </statBases>
+	<graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>BasicAChip</defName>
+    <label>Basic AI Chip</label>
+    <description>A Basic-grade brain implant that houses a basic Artificial Intelligence that assists an awake person, enhancing their processing of reality, but also creating an upper limit that most other brain implants are unable to break through. As a side effect to this, it slightly dulls the sense of pain.</description>
+	<statBases>
+      <MarketValue>2100</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+	<graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>BasicPsychicChip</defName>
+    <label>Basic Psychic Chip</label>
+    <description>A Basic-grade brain implant that partially inhibits psychic phenomina from affecting an individual, good or bad.</description>
+    <statBases>
+      <MarketValue>1100</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+	<graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>BasicToxicChip</defName>
+    <label>Basic Toxic Chip</label>
+    <description>A Basic-grade torso implant that produces special chemicals that help neutralize any present toxic chemicals in the body.</description>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+	<graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>BasicStomachChip</defName>
+    <label>Basic Stomach Chip</label>
+    <description>A Basic-grade digestive implant that produces very minimalist nanobots that attempt to detect and neutralize any foodborne illness before it infects the body, reducing the risk of foodborne illness.\n\nThe chip is technically connected to the Torso, as it's not attached to any vital organs, and simply sends nanites to the digestive organs.</description>
+    <statBases>
+      <MarketValue>1350</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+	<graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>BasicMedicalChip</defName>
+    <label>Basic Medical Chip</label>
+    <description>A Basic-grade medium-capacity data storage chip paired with a mediocre processor that attempts to identify any possible efficient medical method, and applies said knowledge consciously, often causing distraction during medical work. Fortunately, it has an overall positive increase to medical-related work.</description>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+	<graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>BasicFarmerChip</defName>
+    <label>Basic Farmer Chip</label>
+    <description>A Basic-grade brain implant that interfaces with the brain and eyes, finding any efficient method of harvesting, cutting, and/or sowing crops. It then consciously utilizes this knowledge to assist the user in any farming-related tasks. This can distract the user, but the benefit to work speed is greater than the penalty from distraction.</description>
+    <statBases>
+      <MarketValue>1250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+	<graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>BasicMiningChip</defName>
+    <label>Basic Mining Chip</label>
+    <description>A Basic-grade brain implant that interfaces with the brain and eyes, detecting any slightly noticable weakpoints in mineable objects, and then utilizing the knowledge fully consciously, increasing mining speed somewhat. The chip distracts the individual during mining tasks, though. It doesn't affect mood, thankfully. The benefit to mining speed outweighs the distraction.
+	
+	A brain implant that gives its user nearly flawless knowledge in the field of quarrying and mining, doubling mining speed and increasing yield by 25%.</description>
+    <statBases>
+      <MarketValue>1450</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+	<graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>BasicImmuneChip</defName>
+    <label>Basic Immunoassisting Chip</label>
+    <description>A Basic-grade torso implant that releases hormones into the body that encourages increased activity and growth of the immune system to the maximum safe level.</description>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>BasicSleepstopperChip</defName>
+    <label>Basic Sleepstopper Chip (UNUSED)</label>
+    <description>(This is unused, and is unobtainable under most circumstances! This item does not do anything at the moment) A Basic-grade brain implant that emulates some parts of what the brain does while an individual is asleep. It reduces the need for one to sleep significantly, but can't remove the need entirely.</description>
+    <statBases>
+      <MarketValue>1900</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+</Defs>

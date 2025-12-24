@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <ThingDef Name="ImplantsAdvanced" ParentName="BodyPartBase" Abstract="True">
+      <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li>Chips</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedInformationChip</defName>
+    <label>Advanced information chip</label>
+    <description>An Advanced-grade brain implant that automatically stores all the information that an individual can experience, and sifts through it all to find the vast majority of improvements to whatever they are doing, and then automatically integrates such knowledge, increasing skill gain by a large margain.</description>
+    <statBases>
+      <MarketValue>2250</MarketValue>
+      <Mass>14</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedResearchChip</defName>
+    <label>Advanced research Chip</label>
+    <description>An Advanced-grade brain implant that increases activity of the parts of the brain responsible for abstract and critical throught significantly, allowing one to think outside the box better than others. This has a significant affect on research, decreasing the time to unlocking new researches significantly.</description>
+    <statBases>
+      <MarketValue>2750</MarketValue>
+      <Mass>16</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedAChip</defName>
+    <label>Advanced AI Chip</label>
+    <description>An Advanced-grade brain implant that houses an Artificial Intelligence that directly assists an awake person, enhancing their processing of reality significantly, but also creating an upper limit of consciousness that other brain-enhancing implants cannot help get above under most circumstances. It also helps dull any pain to the best of its ability.</description>
+	<statBases>
+      <MarketValue>3100</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedPsychicChip</defName>
+    <label>Advanced Psychic Chip</label>
+    <description>An Advanced-grade brain implant that reduces the activity of the parts of the brain responsible for psychic sensitivity. It can completely remove the sensitivity to those dulled to psychic phenomina, but others only become dulled to such phenomina.
+	A brain implant that inhibits psychic phenomina from affecting an individual, good or bad.</description>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedToxicChip</defName>
+    <label>Advanced Toxic Chip</label>
+    <description>An Advanced-grade torso implant that produces overspecialized nanites that attempt to detect any toxic chemicals entering the body, and then eliminate any intercepted chemicals before they can do significant damage to the body. Some toxic chemicals get through, however, as the nanites cannot be so active that the immune system detects and attacks them.</description>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedStomachChip</defName>
+    <label>Advanced Stomach Chip</label>
+    <description>An Advanced-grade digestive implant that produces overspecialized nanites that automatically detects and neutralizes/weakens any dangerous bacteria it comes by, drastically reducing the risk of food-borne illness. To avoid being attacked by the local immune system, the nanites must remain less active than they could be, however, and cannot help against a food-related illness that has already begun.\n\nThe chip is technically connected to the Torso, as it's not attached to any vital organs, and simply sends nanites to the digestive organs.</description>
+    <statBases>
+      <MarketValue>2600</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedMedicalChip</defName>
+    <label>Advanced Medical Chip</label>
+    <description>An Advanced-grade high-capacity data storage chip paired with a decently powerful processor that attempts to identify the most efficient medical methods, and applies what knowledge it can find semi-consciously, increasing one's medical capabilities significantly. It can distract a user slightly, however. Its bonus to tending and surgery outweighs the distraction, however.</description>
+    <statBases>
+      <MarketValue>4500</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedFarmerChip</defName>
+    <label>Advanced Farmer Chip</label>
+    <description>An Advanced-grade brain implant that nonintrusively interfaces with the eyes through the brain, automatically finding the most efficient way visually identifyable to harvest, cut, or sow plants. It cannot find the absolute most efficient way, however. A more efficient chipset would be required for anything better.</description>
+    <statBases>
+      <MarketValue>2250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedMiningChip</defName>
+    <label>Advanced Mining Chip</label>
+    <description>An Advanced-grade brain implant that nonintrusively interfaces with the eyes through the brain, automatically detecting weakpoints in mineable objects, and then utilizing the knowledge semi-consciously, increasing mining speed drastically. It could be faster, but it distracts the individual slightly while assisting. It fortunately doesn't affect mood or consciousness, though.</description>
+    <statBases>
+      <MarketValue>2850</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedImmuneChip</defName>
+    <label>Advanced Immunoboosting Chip</label>
+    <description>An Advanced-grade torso implant that manufactures and releases overspecialized nanites that help the immune system fight disease, but aren't too active to prevent the immune system from identifying them as an invader.</description>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+   <ThingDef ParentName="ImplantsAdvanced">
+    <defName>AdvancedSleepstopperChip</defName>
+    <label>Advanced Sleepstopper Chip (UNUSED)</label>
+    <description>(This is unused, and is unobtainable under most circumstances! This item does not do anything at the moment) An Advanced-grade brain implant that emulates the process the brain does while an individual is asleep. It drastically reduces the need for one to sleep, but can't remove the need completely.</description>
+    <statBases>
+      <MarketValue>3100</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+</Defs>

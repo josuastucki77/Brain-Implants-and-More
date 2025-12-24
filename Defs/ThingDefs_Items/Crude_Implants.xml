@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <ThingDef Name="Crude" ParentName="BodyPartBase" Abstract="True">
+      <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Tier1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li>Chips</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="Implants">
+    <defName>CrudeImmuneChip</defName>
+    <label>Crude Immune Chip</label>
+    <description>A Primitive-grade torso implant that releases hormones that encourage growth of the Immune System, but is unable to adapt to one's immune system, often causing negative side-effects.</description>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+</Defs>  

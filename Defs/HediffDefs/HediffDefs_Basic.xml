@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <HediffDef Name="Basic" Abstract="True">
+      <hediffClass>Hediff_Implant</hediffClass>
+      <defaultLabelColor>(71,239,0)</defaultLabelColor>
+	  <description>Hediff from a Basic Implant</description>
+      <isBad>false</isBad>
+      <addedPartProps>
+         <partEfficiency>1</partEfficiency>
+         <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="Basic">
+     <defName>BasicInformationChip</defName>
+     <label>Basic Information Chip</label>
+     <labelNoun>a Basic Information Chip</labelNoun>
+     <spawnThingOnRemoved>BasicInformationChip</spawnThingOnRemoved>
+	 <stages>
+         <li>
+            <statOffsets>      
+               <GlobalLearningFactor>0.50</GlobalLearningFactor>
+            </statOffsets>
+         </li>
+      </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="Basic">
+     <defName>BasicResearchChip</defName>
+     <label>Basic Research Chip</label>
+     <labelNoun>a Basic Research Chip</labelNoun>
+     <spawnThingOnRemoved>BasicResearchChip</spawnThingOnRemoved>
+	 <stages>
+         <li>
+            <statOffsets>      
+               <ResearchSpeed>0.25</ResearchSpeed>
+            </statOffsets>
+         </li>
+      </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="Basic">
+     <defName>BasicAChip</defName>
+     <label>Basic AI Chip</label>
+     <labelNoun>a Basic AI Chip</labelNoun>
+     <spawnThingOnRemoved>BasicAChip</spawnThingOnRemoved>
+	 <stages>
+	 <li>
+	     <painFactor>0.75</painFactor>
+         <capMods>
+             <li>
+                <capacity>Consciousness</capacity>
+                <offset>1.25</offset>
+             </li>
+			 <li>
+                <capacity>Consciousness</capacity>
+                <setMax>1.25</setMax>
+             </li>
+         </capMods>
+         </li>
+	 </stages>	 
+  </HediffDef>
+  
+  <HediffDef ParentName="Basic">
+     <defName>BasicPsychicChip</defName>
+     <label>Basic Psychic Chip</label>
+     <labelNoun>a Basic Psychic Chip</labelNoun>
+     <spawnThingOnRemoved>BasicPsychicChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <PsychicSensitivity>-0.25</PsychicSensitivity>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Basic">
+     <defName>BasicToxicChip</defName>
+     <label>Basic Toxic Chip</label>
+     <labelNoun>a Basic Toxic Chip</labelNoun>
+     <spawnThingOnRemoved>BasicToxicChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <ToxicResistance>0.25</ToxicResistance>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Basic">
+     <defName>BasicStomachChip</defName>
+     <label>Basic Stomach Chip</label>
+     <labelNoun>a Basic Stomach Chip</labelNoun>
+     <spawnThingOnRemoved>BasicStomachChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <FoodPoisonChance>-0.25</FoodPoisonChance>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Basic">
+     <defName>BasicMedicalChip</defName>
+     <label>Basic Medical Chip</label>
+     <labelNoun>a Basic Medical Chip</labelNoun>
+     <spawnThingOnRemoved>BasicMedicalChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+		 <MedicalTendSpeed>0.25</MedicalTendSpeed>
+		 <MedicalSurgerySuccessChance>0.15</MedicalSurgerySuccessChance>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Basic">
+     <defName>BasicFarmerChip</defName>
+     <label>Basic Farmer Chip</label>
+     <labelNoun>a Basic Farmer Chip</labelNoun>
+     <spawnThingOnRemoved>BasicFarmerChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	    <statOffsets>
+            <PlantWorkSpeed>+0.50</PlantWorkSpeed>
+			<PlantHarvestYield>+0.50</PlantHarvestYield>
+        </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Basic">
+     <defName>BasicMiningChip</defName>
+     <label>Basic Mining Chip</label>
+     <labelNoun>a Basic Mining Chip</labelNoun>
+	 <hediffClass>MBI.HediffWithComps_MiningYield</hediffClass>
+     <spawnThingOnRemoved>BasicMiningChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	    <statOffsets>
+            <MiningSpeed>+0.50</MiningSpeed>
+        </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Basic">
+     <defName>BasicImmuneChip</defName>
+     <label>Basic Immunoassisting Chip</label>
+     <labelNoun>a Basic Immunoassisting Chip</labelNoun>
+     <spawnThingOnRemoved>BasicImmuneChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <ImmunityGainSpeed>+0.45</ImmunityGainSpeed>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+   
+</Defs>

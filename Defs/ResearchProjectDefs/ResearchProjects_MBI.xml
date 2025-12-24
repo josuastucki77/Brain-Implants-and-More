@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs> 
+
+  <ResearchProjectDef>
+    <defName>BrainInterfacing</defName>
+    <label>Brain Interfacing</label>
+    <description>We know of the wonders of special implants for brains and other bodily parts, but we must learn how to begin crafting such implants to do anything with this knowledge.\n\nThis research unlocks the Electric Assembler building.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>Electronics</defName>
+    <label>Basic Electronics</label>
+    <description>This research teaches you the basic of electronics. This unlocks the electronics assembler and solder, a core component for electronics.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+      <li>MicroelectronicsBasics</li>
+	  <li>BrainInterfacing</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>PrimitiveChipset</defName>
+    <label>Primitive Chipset</label>
+    <description>Learn how to manufacture simple logic circuits.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+      <li>MicroelectronicsBasics</li>
+	  <li>Electronics</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>BasicChipset</defName>
+    <label>Basic Chipset</label>
+    <description>Learn how to manufacture basic logic circuits.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+      <li>MicroelectronicsBasics</li>
+	  <li>PrimitiveChipset</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>AdvancedChipset</defName>
+    <label>Advanced Chipset</label>
+    <description>Learn how to manufacture advanced logic circuits.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+      <li>MicroelectronicsBasics</li>
+	  <li>BasicChipset</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>GlitterworldChipset</defName>
+    <label>Glitterworld Chipset</label>
+    <description>Learn how to manufacture glitterworld logic circuits.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+      <li>MicroelectronicsBasics</li>
+	  <li>AdvancedChipset</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>OpticalInterfacing</defName>
+    <label>Brain-Eye Interfacing</label>
+    <description>It is possible to build implants that take information from the eyes with the help of the brain without directly interacting with said eyes, including artificial eyes.\n\nThis research only unlocks later technologies, and does nothing by itself.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BrainInterfacing</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>SpecializedNanites</defName>
+    <label>Specialized NanoAI</label>
+    <description>It is possible to create nanobots that do very specific tasks at a relatively cheap price with a new type of artificial intelligence. While the AI that controls these nanomachines can't do much more than a few instructions at once, the possibilities are seemingly endless.\n\nThis research only unlocks later technologies, and does nothing by itself.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BrainInterfacing</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>DenseDataStorage</defName>
+    <label>Mega Data Storage</label>
+    <description>Utilizing high-capacity data chips and modern compression algorithms, we can store multiple terabytes of information onto small chips, which can be soon after rapidly decompressed for split-second responces.\n\nThis research only unlocks later technologies, and does nothing by itself.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BrainInterfacing</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FarmerC</defName>
+    <label>Farming Implants</label>
+    <description>Through interfacing with the eyes, one can find a use out of every scrap of harvested material, no matter how minor. This knowledge also allows individuals to swiftly sow plants at speeds previously impossible without automation.\n\nUnlocks the crafting bill for the Farmer Chips, which increases farming work speed and harvest output.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>OpticalInterfacing</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0.75</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MiningC</defName>
+    <label>Mining Implants</label>
+	<description>Through interfacing with the eyes, one can find even the smallest weakpoints in rock walls, and subsequently utilize such knowledge to rapidly mine through an area without exposing themselves to any more risk than a normal miner would.\n\nUnlocks the crafting bill for the Mining Chips, which increases mining speed.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>OpticalInterfacing</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1.25</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  <ResearchProjectDef>
+    <defName>ToxicC</defName>
+    <label>Anti-Toxic Implants</label>
+    <description>It is possible to produce very highly specialized nanites for a relatively low cost to do many things. One possible use of specialized nanites is to locate areas of the body that have above-average levels of toxic chemicals, compounds, or elements and automatically neutralize or relocate said materials to areas of the body where they can be processed.\n\nUnlocks the crafting recipe for the Toxic Chips, which reduces or completely removes risk of Toxic Buildip.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>SpecializedNanites</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1.75</researchViewY>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>StomachC</defName>
+    <label>Digestive Implants</label>
+    <description>It is possible to produce very highly specialized nanites for a relatively low cost to do many things. One possible use of specialized nanites is to dynamically detect, isolate, and eliminate dangerous bacteria in the digestive system while encouraging growth of helpful bacteria.\n\nUnlocks the Stomach chip, which completely removes risk of Food Poisoning.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>SpecializedNanites</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>ImmuneC</defName>
+	<label>Immunity Implants</label>
+	<description>Improving upon the Toxic Chips and Stomach Chips, it is possible to extend the nanite assistance of such chips to the immune system. While there are a variety of ways to do so, nanites are the best way.\n\nUnlocks the crafting recipes for the Immunity Chips, which increases immunity gain speed.</description>
+	<baseCost>4500</baseCost>
+	<techLevel>Spacer</techLevel>
+	<prerequisites>
+	<li>ToxicC</li>
+	<li>StomachC</li>
+	</prerequisites>
+	<tab>MBI</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+	<li>MultiAnalyzer</li>
+	</requiredResearchFacilities>
+	<researchViewX>3</researchViewX>
+	<researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>PsychicC</defName>
+    <label>Anti-Psionic Implants</label>
+	<description>We've always wondered how some people are more sensitive or immune to psychic phenomina than others, and we believe we've found the link to it. Some parts of the brain are somehow fine-tuned to psychic phenomina, such parts of the brain less or completely inactive in those who are dulled to such phenomina. If we figure out how to de-activate these parts of the brain, we can stop these phenomina completely, protecting us against psychic weapons.\n\nUnlocks the crafting bills for the Psychic Chips, which reduces or removes all types of psychic sensitivity.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>BrainInterfacing</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+   
+  <ResearchProjectDef>
+    <defName>MedicalC</defName>
+    <label>Medical Implants</label>
+    <description>By downloading mankind's vast medical knowledge onto a single, very high storage chip, we may be able to make death from surgical error a thing of the past. No more do we need to rely on machines to keep us from making mistakes, for we can put machines in our minds to reach the same ends.\n\nUnlocks the crafting bills for the Medical Chips, which increases medical tending speed and success chance.</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>DenseDataStorage</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef>
+	<defName>SleepstopperC</defName>
+	<label>Sleep Implants</label>
+	<description>Through simulating what the brain does while the body sleeps, we've found out how to replicate the process the brain does while an individual is asleep while said individuals are awake. This will remove the need to sleep entirely.\n\nUnlocks the crafting bill for the Sleepstopper Chip, which removes the need to sleep.</description>
+	<baseCost>4500</baseCost>
+	<techLevel>Spacer</techLevel>
+	<prerequisites>
+	<li>BrainInterfacing</li>
+	<li>SpecializedNanites</li>
+	</prerequisites>
+	<tab>MBI</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+	<li>MultiAnalyzer</li>
+	</requiredResearchFacilities>
+	<researchViewX>1</researchViewX>
+	<researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>AIC</defName>
+    <label>Cognitive Implants</label>
+    <description>By coding an AI and placing said AI into a high storage chip, we can theoretically increase the heights of one's consciousness drastically.\n\nUnlocks the crafting bill for the AI Chip, which has the funcitonality of a Painstopper alongside increasing consciousness significantly.</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+	  <li>DenseDataStorage</li>
+	  <li>OpticalInterfacing</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>InformB</defName>
+    <label>Skill Implants</label>
+    <description>We can theoretically force the brain to store even more information than it is currently able to with the help of memory implants that help storing memories.\n\nUnlocks the crafting bill for the Information Brain, which increases skill gain drastically.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+	  <li>AIC</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>ResearchB</defName>
+	<label>Research Implants</label>
+    <description>By stimulating the parts of the brain that causes abstract and critical thinking, we should be able to make our researchers even better at discovering new technologies.\n\nUnlocks the crafting bill for the Research Brain, which increases research speed.</description>
+    <baseCost>7500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+	  <li>InformB</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>6</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>NanotechB</defName>
+    <label>Generalist Nanites</label>
+    <description>The ability to rapidly heal wounds without oversight is something that has been dreamed of since the dawn of our species. Using very, very small machines known as Nanobots, we should be able to meet this dream in the middle.\n\nUnlocks the crafting bill for the Nanotech Brain, which heals wounds without medicine or help from doctors at a much rapid pace than the body is capable of, and can outheal bleeding.</description>
+    <baseCost>8500</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+	  <li>ResearchB</li>
+	  <li>SpecializedNanites</li>
+    </prerequisites>
+    <tab>MBI</tab>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>7</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+  
+</Defs>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <RecipeDef>
+      <defName>MakeCrudeImmuneChip</defName>
+      <label>fabricate Crude Immune Chip</label>
+      <description>Fabricate a Crude Immune Chip, which increases immunity gain and hunger.</description>
+      <jobString>Fabricating Crude Immune Chip.</jobString>
+      <workAmount>1500</workAmount>
+      <workSpeedStat>SmoothingSpeed</workSpeedStat>
+      <effectWorking>ConstructMetal</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+      <Crafting>6</Crafting>
+      </skillRequirements>
+      <ingredients>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Steel</li>
+            </thingDefs>
+          </filter>
+          <count>40</count>
+        </li>       
+        <li>
+          <filter>
+            <thingDefs>
+              <li>ComponentIndustrial</li>
+            </thingDefs>
+          </filter>
+          <count>2</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>MedicineHerbal</li>
+            </thingDefs>
+          </filter>
+          <count>2</count>
+        </li>
+		<li>
+          <filter>
+            <thingDefs>
+              <li>PrimitiveChipset</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <products>
+        <CrudeImmuneChip>1</CrudeImmuneChip>
+      </products>
+      <recipeUsers>
+        <li>ElectricAssembler</li>
+      </recipeUsers>
+	  <researchPrerequisite>ImmuneC</researchPrerequisite>
+    </RecipeDef>
+
+</Defs>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <RecipeDef Name="SurgeryGlitterworldRemoval" ParentName="SurgeryFlesh" Abstract="True">
+    <surgerySuccessChanceFactor>0.85</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	<workAmount>8000</workAmount>
+	<workerClass>MBI.Recipe_RemoveImplant</workerClass>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>MedicineUltratech</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+   </RecipeDef>
+
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldInformationChip</defName>
+		<label>remove Glitterworld Information Chip</label>
+		<description>Removes a Glitterworld Information Chip.</description>
+		<jobString>Removing Glitterworld Information Chip.</jobString>
+		<workAmount>5500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<removesHediff>GlitterworldInformationChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldResearchChip</defName>
+		<label>remove Glitterworld Research Chip</label>
+		<description>Removes a Glitterworld Research Chip.</description>
+		<jobString>Removing Glitterworld Research Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<removesHediff>GlitterworldResearchChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldAChip</defName>
+		<label>remove Glitterworld AI Chip</label>
+		<description>Removes a Glitterworld AI Chip.</description>
+		<jobString>Removing Glitterworld AI Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<removesHediff>GlitterworldAChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldPsychicChip</defName>
+		<label>remove Glitterworld Psychic Chip</label>
+		<description>Removes a Glitterworld Psychic Chip.</description>
+		<jobString>Removing Glitterworld Psychic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+	    </ingredients>	
+		<removesHediff>GlitterworldPsychicChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldToxicChip</defName>
+		<label>remove Glitterworld Toxic Chip</label>
+		<description>Removes a Glitterworld Toxic Chip.</description>
+		<jobString>Removing Glitterworld Toxic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>GlitterworldToxicChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldStomachChip</defName>
+		<label>remove Glitterworld Stomach Chip</label>
+		<description>Removes a Glitterworld Stomach Chip.</description>
+		<jobString>Removing Glitterworld Stomach Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>GlitterworldStomachChip</removesHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldMedicalChip</defName>
+		<label>remove Glitterworld Medical Chip</label>
+		<description>Removes a Glitterworld Medical Chip.</description>
+		<jobString>Removing Glitterworld Medical Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>GlitterworldMedicalChip</removesHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldFarmerChip</defName>
+		<label>remove Glitterworld Farmer Chip</label>
+		<description>Removes a Glitterworld Farmer Chip.</description>
+		<jobString>Removing Glitterworld Farmer Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>GlitterworldFarmerChip</removesHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldMiningChip</defName>
+		<label>remove Glitterworld Mining Chip</label>
+		<description>Removes a Glitterworld Mining Chip.</description>
+		<jobString>Removing Glitterworld Mining Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>GlitterworldMiningChip</removesHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldImmuneChip</defName>
+		<label>remove Glitterworld Nanoimmune Chip</label>
+		<description>Removes a Glitterworld Nanoimmune Chip.</description>
+		<jobString>Removing Glitterworld Nanoimmune Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>GlitterworldImmuneChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworldRemoval">
+		<defName>RemoveGlitterworldSleepstopperChip</defName>
+		<label>remove Glitterworld Sleepstopper Chip</label>
+		<description>Removes a Glitterworld Sleepstopper Chip.</description>
+		<jobString>Removing Glitterworld Sleepstopper Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>		
+		<removesHediff>GlitterworldSleepstopperChip</removesHediff>
+	</RecipeDef>
+	
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <RecipeDef Name="SurgeryCrudeRemoval" ParentName="SurgeryFlesh" Abstract="True">
+    <surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+	<workerClass>MBI.Recipe_RemoveImplant</workerClass>
+	<workAmount>1250</workAmount>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>MedicineIndustrial</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="SurgeryCrudeRemoval">
+		<defName>RemoveCrudeImmuneChip</defName>
+		<label>remove Crude Immune Chip</label>
+		<description>Removes a Crude Immune Chip.</description>
+		<jobString>Removing Crude Immune Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<removesHediff>CrudeImmuneChip</removesHediff>
+	</RecipeDef>
+   
+</Defs>   

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <HediffDef Name="Advanced" Abstract="True">
+      <hediffClass>Hediff_Implant</hediffClass>
+      <defaultLabelColor>(0,205,255)</defaultLabelColor>
+	  	  <description>Hediff from a Advanced Implant</description>
+      <isBad>false</isBad>
+      <addedPartProps>
+         <partEfficiency>1.25</partEfficiency>
+         <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+   </HediffDef>
+
+   <HediffDef ParentName="Advanced">
+     <defName>AdvancedInformationChip</defName>
+     <label>Advanced Information Chip</label>
+     <labelNoun>a Advanced Information Chip</labelNoun>
+     <spawnThingOnRemoved>AdvancedInformationChip</spawnThingOnRemoved>
+	 <stages>
+         <li>
+            <statOffsets>      
+               <GlobalLearningFactor>1.25</GlobalLearningFactor>
+            </statOffsets>
+         </li>
+      </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="Advanced">
+     <defName>AdvancedResearchChip</defName>
+     <label>Advanced Research Chip</label>
+     <labelNoun>a Advanced Research Chip</labelNoun>
+     <spawnThingOnRemoved>AdvancedResearchChip</spawnThingOnRemoved>
+	 <stages>
+         <li>
+            <statOffsets>      
+               <ResearchSpeed>1.0</ResearchSpeed>
+            </statOffsets>
+         </li>
+      </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="Advanced">
+     <defName>AdvancedAChip</defName>
+     <label>Advanced AI Chip</label>
+     <labelNoun>a Advanced AI Chip</labelNoun>
+     <spawnThingOnRemoved>AdvancedAChip</spawnThingOnRemoved>
+	 <stages>
+	 <li>
+	     <painFactor>0.5</painFactor>
+         <capMods>
+             <li>
+                <capacity>Consciousness</capacity>
+                <offset>1.5</offset>
+             </li>
+			 <li>
+                <capacity>Consciousness</capacity>
+                <setMax>1.5</setMax>
+             </li>
+         </capMods>
+         </li>
+	 </stages>	 
+  </HediffDef>
+  
+  <HediffDef ParentName="Advanced">
+     <defName>AdvancedPsychicChip</defName>
+     <label>Advanced Psychic Chip</label>
+     <labelNoun>a Advanced Psychic Chip</labelNoun>
+     <spawnThingOnRemoved>AdvancedPsychicChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <PsychicSensitivity>-0.5</PsychicSensitivity>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Advanced">
+     <defName>AdvancedToxicChip</defName>
+     <label>Advanced Toxic Chip</label>
+     <labelNoun>a Advanced Toxic Chip</labelNoun>
+     <spawnThingOnRemoved>AdvancedToxicChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <ToxicResistance>0.5</ToxicResistance>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Advanced">
+     <defName>AdvancedStomachChip</defName>
+     <label>Advanced Stomach Chip</label>
+     <labelNoun>a Advanced Stomach Chip</labelNoun>
+     <spawnThingOnRemoved>AdvancedStomachChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <FoodPoisonChance>-0.5</FoodPoisonChance>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Advanced">
+     <defName>AdvancedMedicalChip</defName>
+     <label>Advanced Medical Chip</label>
+     <labelNoun>a Advanced Medical Chip</labelNoun>
+     <spawnThingOnRemoved>AdvancedMedicalChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+		 <MedicalTendSpeed>0.50</MedicalTendSpeed>
+		 <MedicalSurgerySuccessChance>0.35</MedicalSurgerySuccessChance>
+		 <MedicalTendQuality>0.75</MedicalTendQuality>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Advanced">
+     <defName>AdvancedFarmerChip</defName>
+     <label>Advanced Farmer Chip</label>
+     <labelNoun>a Advanced Farmer Chip</labelNoun>
+     <spawnThingOnRemoved>AdvancedFarmerChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	    <statOffsets>
+            <PlantWorkSpeed>+1.0</PlantWorkSpeed>
+			<PlantHarvestYield>+1.0</PlantHarvestYield>
+        </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Advanced">
+     <defName>AdvancedMiningChip</defName>
+     <label>Advanced Mining Chip</label>
+     <labelNoun>a Advanced Mining Chip</labelNoun>
+	 <hediffClass>MBI.HediffWithComps_MiningYield</hediffClass>
+     <spawnThingOnRemoved>AdvancedMiningChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	    <statOffsets>
+            <MiningSpeed>+1.0</MiningSpeed>
+        </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Advanced">
+     <defName>AdvancedImmuneChip</defName>
+     <label>Advanced Immunoboosting  Chip</label>
+     <labelNoun>a Advanced Immunoboosting  Chip</labelNoun>
+     <spawnThingOnRemoved>AdvancedImmuneChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <ImmunityGainSpeed>+0.75</ImmunityGainSpeed>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <ThingDef Name="ImplantsNanotech" ParentName="BodyPartBase" Abstract="True">
+      <techLevel>Archotech</techLevel>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Nanotech</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li>Chips</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ImplantsNanotech">
+    <defName>NanotechChip</defName>
+    <label>nanotech Chip</label>
+    <description>A brain implant that automatically manufactures generalist nanites that can seal and heal all present wounds, old and new at a relatively rapid pace without the need for tending. Does not heal permanent brain damage or active health conditions, however. It cannot reverse death, or regenerate lost limbs/organs. Regardless, it is highly valued on all kinds of worlds for its ability to create nearly unkillable soldiers who need mere hours to be ready to return to the battlefield.\n\nIt also somehow automatically helps installation into individuals, drastically reducing the chance of error during surgery, and making death from surgical failiure a near impossibility,</description>
+    <statBases>
+      <MarketValue>12500</MarketValue>
+      <Mass>20</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+</Defs>

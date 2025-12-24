@@ -1,0 +1,12 @@
+Welcome to the Defs!
+
+If you're not a developer of the BIaM(i) mod, then this is meant for you.
+This was written by explodoboy, although I will write this in third person.
+
+Jonny02 and explodoboy have tried their best to keep the defs of the mod clean and orderly, and that can be telled by how neat and orderly everything is at the moment.
+
+Here's the roles of the mod devs real quick:
+Jonny02: Main developer and writer
+explodoboy: "Quality Assurance" (Writing good descriptions, checking for errors)
+
+If you find an error in the defs, please tell us which file it is and one of us will get right to work, depending on who's awake.

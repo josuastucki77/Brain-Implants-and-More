@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+
+   <HediffDef Name="codeImplant" Abstract="True">
+      <defaultLabelColor>(53,234,255)</defaultLabelColor>
+	  <description>Hediff from a Nanotech Implant</description>
+      <isBad>false</isBad>
+      <addedPartProps>
+         <partEfficiency>1</partEfficiency>
+         <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+   </HediffDef>
+   
+  
+  <HediffDef ParentName="codeImplant">
+     <defName>NanotechChip</defName>
+     <label>Nanotech Chip</label>
+     <labelNoun>a Nanotech Chip</labelNoun>
+	 <hediffClass>MBI.HediffWithComps_WoundHealRate</hediffClass>
+     <spawnThingOnRemoved>NanotechChip</spawnThingOnRemoved>
+	 <stages>
+         <li>
+            <statOffsets>      
+               <MBIWoundHealRate>1</MBIWoundHealRate>
+            </statOffsets>
+         </li>
+      </stages>
+  </HediffDef>
+  
+</Defs>

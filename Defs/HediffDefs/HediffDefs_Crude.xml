@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <HediffDef Name="CrudeS" Abstract="True">
+      <hediffClass>Hediff_Implant</hediffClass>
+      <defaultLabelColor>(204,147,93)</defaultLabelColor>
+	  	  <description>Hediff from a Crude Implant</description>
+      <isBad>false</isBad>
+      <addedPartProps>
+         <partEfficiency>1</partEfficiency>
+         <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+   </HediffDef>
+   
+   <HediffDef ParentName="CrudeS">
+     <defName>CrudeImmuneChip</defName>
+     <label>Crude Immune Chip</label>
+     <labelNoun>a Crude Immune Chip</labelNoun>
+     <spawnThingOnRemoved>CrudeImmuneChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <ImmunityGainSpeed>+0.15</ImmunityGainSpeed>
+		 <HungerRateMultiplier>0.35</HungerRateMultiplier>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+   
+</Defs>   

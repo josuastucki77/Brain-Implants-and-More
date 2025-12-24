@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <HediffDef Name="Glitterworld" Abstract="True">
+      <hediffClass>Hediff_Implant</hediffClass>
+      <defaultLabelColor>(255,0,220)</defaultLabelColor>
+	  <description>Hediff from a Glitterworld Implant</description>
+      <isBad>false</isBad>
+      <addedPartProps>
+         <partEfficiency>1.50</partEfficiency>
+         <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+   </HediffDef>
+
+   <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldInformationChip</defName>
+     <label>Glitterworld Information Chip</label>
+     <labelNoun>a Glitterworld Information Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldInformationChip</spawnThingOnRemoved>
+	 <stages>
+         <li>
+            <statOffsets>      
+               <GlobalLearningFactor>2.0</GlobalLearningFactor>
+            </statOffsets>
+         </li>
+      </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldResearchChip</defName>
+     <label>Glitterworld Research Chip</label>
+     <labelNoun>a Glitterworld Research Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldResearchChip</spawnThingOnRemoved>
+	 <stages>
+         <li>
+            <statOffsets>      
+               <ResearchSpeed>2.0</ResearchSpeed>
+            </statOffsets>
+         </li>
+      </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldAChip</defName>
+     <label>Glitterworld AI Chip</label>
+     <labelNoun>a Glitterworld AI Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldAChip</spawnThingOnRemoved>
+	 <stages>
+	 <li>
+	     <painFactor>0.0</painFactor>
+         <capMods>
+             <li>
+                <capacity>Consciousness</capacity>
+                <offset>2.5</offset>
+             </li>
+			 <li>
+                <capacity>Consciousness</capacity>
+                <setMax>2.5</setMax>
+             </li>
+         </capMods>
+         </li>
+	 </stages>	 
+  </HediffDef>
+  
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldPsychicChip</defName>
+     <label>Glitterworld Psychic Chip</label>
+     <labelNoun>a Glitterworld Psychic Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldPsychicChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <PsychicSensitivity>-1.0</PsychicSensitivity>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldToxicChip</defName>
+     <label>Glitterworld Toxic Chip</label>
+     <labelNoun>a Glitterworld Toxic Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldToxicChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <ToxicResistance>1.0</ToxicResistance>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldStomachChip</defName>
+     <label>Glitterworld Stomach Chip</label>
+     <labelNoun>a Glitterworld Stomach Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldStomachChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <FoodPoisonChance>-1.0</FoodPoisonChance>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldMedicalChip</defName>
+     <label>Glitterworld Medical Chip</label>
+     <labelNoun>a Glitterworld Medical Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldMedicalChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+		 <MedicalTendSpeed>1.25</MedicalTendSpeed>
+		 <MedicalSurgerySuccessChance>+1.0</MedicalSurgerySuccessChance>
+		 <MedicalTendQuality>1.25</MedicalTendQuality>
+		 <SurgerySuccessChanceFactor>+1.0</SurgerySuccessChanceFactor>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldFarmerChip</defName>
+     <label>Glitterworld Farmer Chip</label>
+     <labelNoun>a Glitterworld Farmer Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldFarmerChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	    <statOffsets>
+            <PlantWorkSpeed>+1.5</PlantWorkSpeed>
+			<PlantHarvestYield>+1.5</PlantHarvestYield>
+        </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldMiningChip</defName>
+     <label>Glitterworld Mining Chip</label>
+     <labelNoun>a Glitterworld Mining Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldMiningChip</spawnThingOnRemoved>
+	 <hediffClass>MBI.HediffWithComps_MiningYield</hediffClass>
+     <stages>
+	 <li>
+	    <statOffsets>
+            <MiningSpeed>+2.0</MiningSpeed>
+        </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldImmuneChip</defName>
+     <label>Glitterworld Immunoboosting Chip</label>
+     <labelNoun>a Glitterworld Nanoimmune Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldImmuneChip</spawnThingOnRemoved>
+     <stages>
+	 <li>
+	     <statOffsets>
+         <ImmunityGainSpeed>5</ImmunityGainSpeed>
+		 </statOffsets>
+     </li>
+	 </stages>		 
+  </HediffDef>
+  
+  <HediffDef ParentName="Glitterworld">
+     <defName>GlitterworldSleepstopperChip</defName>
+     <label>Glitterworld Sleepstopper Chip</label>
+     <labelNoun>a Glitterworld Sleepstopper Chip</labelNoun>
+     <spawnThingOnRemoved>GlitterworldSleepstopperChip</spawnThingOnRemoved>
+     <stages>
+      <li>
+        <restFallFactor>0</restFallFactor>
+      </li>
+    </stages>		 
+  </HediffDef>
+  
+</Defs>

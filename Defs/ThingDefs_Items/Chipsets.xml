@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+    <defName>PrimitiveChipset</defName>
+    <label>Primitive Chipset</label>
+    <description>A collection of primitive electonic parts repurposed to be interfaced with bodily parts, sometimes the brain. These components are similar to those from the early 2050's, and often have negative side-effects.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Z170</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+	<thingCategories>
+      <li>Chipsets</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <MarketValue>578</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.4</Flammability>
+	  <DeteriorationRate>2.0</DeteriorationRate>
+	</statBases>
+    <intricate>true</intricate>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+    <defName>BasicChipset</defName>
+    <label>Basic Chipset</label>
+    <description>A collection of basic electonic parts designed to be interfaced with bodily parts, especially the brain. Popular on Urbworlds and Rimworlds.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Z270</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+	<thingCategories>
+      <li>Chipsets</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <MarketValue>1300</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.4</Flammability>
+	  <DeteriorationRate>2.0</DeteriorationRate>
+	</statBases>
+    <intricate>true</intricate>
+    </ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+    <defName>AdvancedChipset</defName>
+    <label>Advanced Chipset</label>
+    <description>A collection of intermediate electonic parts designed to be interfaced with bodily parts, especially the brain. Popular on Midworlds and equivilant.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Z370</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+	<thingCategories>
+      <li>Chipsets</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <MarketValue>2925</MarketValue>
+      <Mass>1</Mass>
+      <Flammability>0.3</Flammability>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+	</statBases>
+    <intricate>true</intricate>
+    </ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+    <defName>GlitterworldChipset</defName>
+    <label>Glitterworld Chipset</label>
+    <description>A collection of advanced electonic parts designed to be interfaced with bodily parts, especially the brain. Only seen in major use on Glitterworlds.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Z470</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+	<thingCategories>
+      <li>Chipsets</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <MarketValue>5900</MarketValue>
+      <Mass>2</Mass>
+      <Flammability>0.2</Flammability>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+	</statBases>
+    <intricate>true</intricate>
+    </ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+    <defName>Solder</defName>
+    <label>Solder</label>
+    <description>Solder is a fusible metal alloy used to create a permanent bond between metal workpieces.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Solder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+	<thingCategories>
+      <li>Chipsets</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.25</Flammability>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+	</statBases>
+    <intricate>true</intricate>
+    </ThingDef>
+
+</Defs>

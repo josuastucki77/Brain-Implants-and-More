@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <RecipeDef Name="SurgeryAdvanced" ParentName="SurgeryFlesh" Abstract="True">
+    <surgerySuccessChanceFactor>0.85</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+	<workAmount>5000</workAmount>
+	<workerClass>Recipe_InstallImplant</workerClass>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>MedicineIndustrial</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+   </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallNanotechChip</defName>
+		<label>install Nanotech Chip</label>
+		<description>Installs a Nanotech Chip.</description>
+		<jobString>Installing Nanotech Chip.</jobString>
+		<workAmount>12000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NanotechChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>NanotechChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>NanotechChip</addsHediff>
+	</RecipeDef>
+  
+  	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedInformationChip</defName>
+		<label>install Advanced Information Chip</label>
+		<description>Installs a Advanced Information Chip.</description>
+		<jobString>Installing Advanced Information Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedInformationChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedInformationChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedInformationChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedResearchChip</defName>
+		<label>install Advanced Research Chip</label>
+		<description>Installs a Advanced Research Chip.</description>
+		<jobString>Installing Advanced Research Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedResearchChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedResearchChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedResearchChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedAChip</defName>
+		<label>install Advanced AI Chip</label>
+		<description>Installs a Advanced AI Chip.</description>
+		<jobString>Installing Advanced AI Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedAChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedAChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedAChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedPsychicChip</defName>
+		<label>install Advanced Psychic Chip</label>
+		<description>Installs a Advanced Psychic Chip.</description>
+		<jobString>Installing Advanced Psychic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedPsychicChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedPsychicChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedPsychicChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedToxicChip</defName>
+		<label>install Advanced Toxic Chip</label>
+		<description>Installs a Advanced Toxic Chip.</description>
+		<jobString>Installing Advanced Toxic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedToxicChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedToxicChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedToxicChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedStomachChip</defName>
+		<label>install Advanced Stomach Chip</label>
+		<description>Installs a Advanced Stomach Chip.</description>
+		<jobString>Installing Advanced Stomach Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedStomachChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedStomachChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedStomachChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedMedicalChip</defName>
+		<label>install Advanced Medical Chip</label>
+		<description>Installs a Advanced Medical Chip.</description>
+		<jobString>Installing Advanced Medical Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedMedicalChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedMedicalChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedMedicalChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedFarmerChip</defName>
+		<label>install Advanced Farmer Chip</label>
+		<description>Installs a Advanced Farmer Chip.</description>
+		<jobString>Installing Advanced Farmer Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedFarmerChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedFarmerChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedFarmerChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedMiningChip</defName>
+		<label>install Advanced Mining Chip</label>
+		<description>Installs a Advanced Mining Chip.</description>
+		<jobString>Installing Advanced Mining Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedMiningChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedMiningChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedMiningChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedImmuneChip</defName>
+		<label>install Advanced Immunoboosting Chip</label>
+		<description>Installs a Advanced Immunoboosting Chip.</description>
+		<jobString>Installing Advanced Immunoboosting Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedImmuneChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedImmuneChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedImmuneChip</addsHediff>
+	</RecipeDef>
+</Defs>

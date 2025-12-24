@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <RecipeDef Name="SurgeryBasic" ParentName="SurgeryFlesh" Abstract="True">
+    <surgerySuccessChanceFactor>0.80</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.02</deathOnFailedSurgeryChance>
+	<workerClass>Recipe_InstallImplant</workerClass>
+	<workAmount>3000</workAmount>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>MedicineIndustrial</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+   </RecipeDef>
+  	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicInformationChip</defName>
+		<label>install Basic Information Chip</label>
+		<description>Installs a Basic Information Chip.</description>
+		<jobString>Installing Basic Information Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicInformationChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicInformationChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicInformationChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicResearchChip</defName>
+		<label>install Basic Research Chip</label>
+		<description>Installs a Basic Research Chip.</description>
+		<jobString>Installing Basic Research Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicResearchChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicResearchChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicResearchChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicAChip</defName>
+		<label>install Basic AI Chip</label>
+		<description>Installs a Basic AI Chip.</description>
+		<jobString>Installing Basic AI Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicAChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicAChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicAChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicPsychicChip</defName>
+		<label>install Basic Psychic Chip</label>
+		<description>Installs a Basic Psychic Chip.</description>
+		<jobString>Installing Basic Psychic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicPsychicChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicPsychicChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicPsychicChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicToxicChip</defName>
+		<label>install Basic Toxic Chip</label>
+		<description>Installs a Basic Toxic Chip.</description>
+		<jobString>Installing Basic Toxic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicToxicChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicToxicChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicToxicChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicStomachChip</defName>
+		<label>install Basic Stomach Chip</label>
+		<description>Installs a Basic Stomach Chip.</description>
+		<jobString>Installing Basic Stomach Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicStomachChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicStomachChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicStomachChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicMedicalChip</defName>
+		<label>install Basic Medical Chip</label>
+		<description>Installs a Basic Medical Chip.</description>
+		<jobString>Installing Basic Medical Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicMedicalChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicMedicalChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicMedicalChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicFarmerChip</defName>
+		<label>install Basic Farmer Chip</label>
+		<description>Installs a Basic Farmer Chip.</description>
+		<jobString>Installing Basic Farmer Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicFarmerChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicFarmerChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicFarmerChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicMiningChip</defName>
+		<label>install Basic Mining Chip</label>
+		<description>Installs a Basic Mining Chip.</description>
+		<jobString>Installing Basic Mining Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicMiningChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicMiningChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicMiningChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryBasic">
+		<defName>InstallBasicImmuneChip</defName>
+		<label>install Basic Immunoassisting Chip</label>
+		<description>Installs a Basic Immunoassisting Chip.</description>
+		<jobString>Installing Basic Immunoassisting Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BasicImmuneChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BasicImmuneChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BasicImmuneChip</addsHediff>
+	</RecipeDef>
+		
+</Defs>

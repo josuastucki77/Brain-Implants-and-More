@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <RecipeDef Name="SurgeryGlitterworld" ParentName="SurgeryFlesh" Abstract="True">
+    <surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+	<workAmount>8000</workAmount>
+	<workerClass>Recipe_InstallImplant</workerClass>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>MedicineUltratech</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+   </RecipeDef>
+
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldInformationChip</defName>
+		<label>install Glitterworld Information Chip</label>
+		<description>Installs a Glitterworld Information Chip.</description>
+		<jobString>Installing Glitterworld Information Chip.</jobString>
+		<workAmount>5500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldInformationChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+		   <Steel>60</Steel>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldInformationChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldInformationChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldResearchChip</defName>
+		<label>install Glitterworld Research Chip</label>
+		<description>Installs a Glitterworld Research Chip.</description>
+		<jobString>Installing Glitterworld Research Chip.</jobString>
+		<workAmount>9000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldResearchChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldResearchChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldResearchChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldAChip</defName>
+		<label>install Glitterworld AI Chip</label>
+		<description>Installs a Glitterworld AI Chip.</description>
+		<jobString>Installing Glitterworld AI Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldAChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldAChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldAChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldPsychicChip</defName>
+		<label>install Glitterworld Psychic Chip</label>
+		<description>Installs a Glitterworld Psychic Chip.</description>
+		<jobString>Installing Glitterworld Psychic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldPsychicChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldPsychicChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldPsychicChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldToxicChip</defName>
+		<label>install Glitterworld Toxic Chip</label>
+		<description>Installs a Glitterworld Toxic Chip.</description>
+		<jobString>Installing Glitterworld Toxic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldToxicChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldToxicChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldToxicChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldStomachChip</defName>
+		<label>install Glitterworld Stomach Chip</label>
+		<description>Installs a Glitterworld Stomach Chip.</description>
+		<jobString>Installing Glitterworld Stomach Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldStomachChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldStomachChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldStomachChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldMedicalChip</defName>
+		<label>install Glitterworld Medical Chip</label>
+		<description>Installs a Glitterworld Medical Chip.</description>
+		<jobString>Installing Glitterworld Medical Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldMedicalChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldMedicalChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldMedicalChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldFarmerChip</defName>
+		<label>install Glitterworld Farmer Chip</label>
+		<description>Installs a Glitterworld Farmer Chip.</description>
+		<jobString>Installing Glitterworld Farmer Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldFarmerChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldFarmerChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldFarmerChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldMiningChip</defName>
+		<label>install Glitterworld Mining Chip</label>
+		<description>Installs a Glitterworld Mining Chip.</description>
+		<jobString>Installing Glitterworld Mining Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldMiningChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldMiningChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldMiningChip</addsHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldImmuneChip</defName>
+		<label>install Glitterworld Nanoimmune Chip</label>
+		<description>Installs a Glitterworld Nanoimmune Chip.</description>
+		<jobString>Installing Glitterworld Nanoimmune Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldImmuneChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldImmuneChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldImmuneChip</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryGlitterworld">
+		<defName>InstallGlitterworldSleepstopperChip</defName>
+		<label>install Glitterworld Sleepstopper Chip</label>
+		<description>Installs a Glitterworld Sleepstopper Chip.</description>
+		<jobString>Installing Glitterworld Sleepstopper Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GlitterworldSleepstopperChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GlitterworldSleepstopperChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GlitterworldSleepstopperChip</addsHediff>
+	</RecipeDef>
+	
+</Defs>

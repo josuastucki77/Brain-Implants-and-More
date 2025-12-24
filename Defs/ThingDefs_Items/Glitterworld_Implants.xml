@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <ThingDef Name="ImplantsGlitterworld" ParentName="BodyPartBase" Abstract="True">
+      <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/Chip_Nanotech</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li>Chips</li>
+    </thingCategories>
+	 <techHediffsTags>
+      <li>Spacer</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldInformationChip</defName>
+    <label>Glitterworld Information chip</label>
+    <description>A Glitterworld-grade brain implant that automatically stores every piece of information an individual experiences, and carefully sifts through it to find every last possible improvement to whatever they are doing, no matter how small. It then instantly integrates such knowledge, making skill gain much faster than any non-modified peer could ever hope to reach.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+    <statBases>
+      <MarketValue>5100</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldResearchChip</defName>
+    <label>Glitterworld Research Chip</label>
+    <description>A Glitterworld-grade brain implant that stimulates the parts of the brain responsible for abstract and critical thought to the absolute limit of human capability, allowing one to think well outside of the box. This has the greatest effect on research, where one can find the path to a new technology in days, when others would take weeks.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+    <statBases>
+      <MarketValue>5250</MarketValue>
+      <Mass>16</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldAChip</defName>
+    <label>Glitterworld AI Chip</label>
+    <description>A Glitterworld-grade brain implant that houses an Artificial Intelligence that directly assists an awake person, enhancing their perception and sharpness of the world around them to a degree never imagined before. It gives people such a clean feeling of reality that most consider it shocking that they had so much right under their noses, just out of their grips. The AI also processes and inhibits noceception; the sense of pain.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+	<statBases>
+      <MarketValue>6200</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldPsychicChip</defName>
+    <label>Glitterworld Psychic Chip</label>
+    <description>A Glitterworld-grade implant that carefully de-activates only the very specific parts of the brain that are known to cause sensitivity to psychic phenomina, without affecting anything else whatsoever. This provides immunity to Psychic Drones and Psychic Weapons, but also to Psychic Soothes. It effectively gives the trait of Psychic Deafness.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+    <statBases>
+      <MarketValue>4800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldToxicChip</defName>
+    <label>Glitterworld Toxic Chip</label>
+    <description>A Glitterworld-grade torso implant that automatically manufactures and releases specialized nanobots that wanders across the entirety of the body, automatically identifying and neutralizing dangerous chemicals that would otherwise cause damage to the body with such speed and efficiency that it effectively eliminates the risk to all toxic chemicals known to humanity. Installation of this implant does not automatically eliminate any Toxic Buildup already in the body, however. The body must heal itself in that case.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+    <statBases>
+      <MarketValue>3400</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldStomachChip</defName>
+    <label>Glitterworld Stomach Chip</label>
+    <description>A Glitterworld-grade digestive implant that automatically manufactures and releases specialized nanobots that scour the digestive tract for any trace of pathogen, and the crushing it with immense force, removing all risk of all foodborne illness, even for the most incompetent chefs who lace their food with cyanide and E.Coli poison. If one gets sick with this implant inside them, there is a God out there, and it hates all life.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.\n\nThe chip is technically connected to the Torso, as it's not attached to any vital organs, and simply sends nanites to the digestive organs.</description>
+    <statBases>
+      <MarketValue>4800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldMedicalChip</defName>
+    <label>Glitterworld Medical Chip</label>
+    <description>A Glitterworld-grade high-capacity data storage chip paired with a powerful processor that automatically identifies the most efficient and safe medical methods and applies such knowledge subconsciously, increasing one's medical capabilities to an extreme level. It is able to adapt to any situation on the fly, and can turn the most catastrophic surgeries into minor error... If one can even make a mistake in the first place.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+    <statBases>
+      <MarketValue>8500</MarketValue>
+      <Mass>3</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldFarmerChip</defName>
+    <label>Glitterworld Farmer Chip</label>
+    <description>A Glitterworld-grade implant that nonintrusively interfaces with the eyes through the brain, automatically identifying the most efficient method of sowing, harvesting, and cutting crops. Once it completes this split-second calculation, it feeds the knowledge to individual's subsconscious brain, directing them without them realizing it. This increases the possible work speed with plants exponentially.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+    <statBases>
+      <MarketValue>4850</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldMiningChip</defName>
+    <label>Glitterworld Mining Chip</label>
+    <description>A Glitterworld-grade implant that nonintrusively interfaces with the eyes through the brain, automatically detecting weakspots in mineable walls no matter how small. It then uses this knowledge through subconsciously feeding the information to an individual, increasing effective mining speed by an extreme amount.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+    <statBases>
+      <MarketValue>4850</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsGlitterworld">
+    <defName>GlitterworldImmuneChip</defName>
+    <label>Glitterworld Nanoimmune Chip</label>
+    <description>A Glitterworld-grade implant located behind the Ribs, protected by the torso. The Nanoimmune Chip automatically manufactures and releases nanobots around an individual's body, where the nanobots seek out any disease and either disassemble or obliterate it. The chip is often able to wipe out a disease before it becomes a significant threat, often before it even becomes a nuisance. Even those who live past the age of 100 and those with weakened immune systems rarely, if ever die of disease when this chip is implanted inside them. This implant should be reserved for the elderly and the immunocompromised, as younger individuals do not need such a powerful implant.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+    <statBases>
+      <MarketValue>7500</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ImplantsAdvanced">
+    <defName>GlitterworldSleepstopperChip</defName>
+    <label>Glitterworld Sleepstopper Chip</label>
+    <description>A Glitterworld-grade implant that directly interfaces with the brain, and then automatically does the tasks that the brain would normally do while one is asleep, removing the need to sleep completely. Consequentially, many find themselves with a lot more time to pursue their personal goals than ever before.\n\nGlitterworld chips require Glitterworld Medicine to properly implant.</description>
+    <statBases>
+      <MarketValue>5250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+</Defs>

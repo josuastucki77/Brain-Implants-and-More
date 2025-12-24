@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <RecipeDef Name="SurgeryAdvancedRemoval" ParentName="SurgeryFlesh" Abstract="True">
+    <surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+	<workAmount>2750</workAmount>
+	<workerClass>MBI.Recipe_RemoveImplant</workerClass>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>MedicineIndustrial</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+   </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveNanotechChip</defName>
+		<label>removes Nanotech Chip</label>
+		<description>Removes a Nanotech Chip.</description>
+		<jobString>Removes Nanotech Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+	    </ingredients>		
+		<removesHediff>NanotechChip</removesHediff>
+	</RecipeDef>
+  
+  	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedInformationChip</defName>
+		<label>removes Advanced Information Chip</label>
+		<description>Removes a Advanced Information Chip.</description>
+		<jobString>Removes Advanced Information Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<removesHediff>AdvancedInformationChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedResearchChip</defName>
+		<label>removes Advanced Research Chip</label>
+		<description>Removes a Advanced Research Chip.</description>
+		<jobString>Removes Advanced Research Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<removesHediff>AdvancedResearchChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedAChip</defName>
+		<label>removes Advanced AI Chip</label>
+		<description>Removes a Advanced AI Chip.</description>
+		<jobString>Removes Advanced AI Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>AdvancedAChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedPsychicChip</defName>
+		<label>removes Advanced Psychic Chip</label>
+		<description>Removes a Advanced Psychic Chip.</description>
+		<jobString>Removes Advanced Psychic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>AdvancedPsychicChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedToxicChip</defName>
+		<label>removes Advanced Toxic Chip</label>
+		<description>Removes a Advanced Toxic Chip.</description>
+		<jobString>Removes Advanced Toxic Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>AdvancedToxicChip</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedStomachChip</defName>
+		<label>removes Advanced Stomach Chip</label>
+		<description>Removes a Advanced Stomach Chip.</description>
+		<jobString>Removes Advanced Stomach Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>AdvancedStomachChip</removesHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedMedicalChip</defName>
+		<label>removes Advanced Medical Chip</label>
+		<description>Removes a Advanced Medical Chip.</description>
+		<jobString>Removes Advanced Medical Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>AdvancedMedicalChip</removesHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedFarmerChip</defName>
+		<label>removes Advanced Farmer Chip</label>
+		<description>Removes a Advanced Farmer Chip.</description>
+		<jobString>Removes Advanced Farmer Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>AdvancedFarmerChip</removesHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedMiningChip</defName>
+		<label>removes Advanced Mining Chip</label>
+		<description>Removes a Advanced Mining Chip.</description>
+		<jobString>Removes Advanced Mining Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>AdvancedMiningChip</removesHediff>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryAdvancedRemoval">
+		<defName>RemoveAdvancedImmuneChip</defName>
+		<label>removes Advanced Immunoboosting Chip</label>
+		<description>Removes a Advanced Immunoboosting Chip.</description>
+		<jobString>Removes Advanced Immunoboosting Chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>	
+		<removesHediff>AdvancedImmuneChip</removesHediff>
+	</RecipeDef>
+</Defs>

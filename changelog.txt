@@ -1,0 +1,8 @@
+CHANGELOG (Patch v2.0, revision 4, hotfix 1)
+
+* Craft Glitterworld Toxic Chip billl no longer crafts Glitterworld Psychic Chip
+
+CHANGELOG (Patch v3.0)
+
+* Chipsets are now craftable. Research Electronics to get started!
+
